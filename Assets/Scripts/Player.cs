@@ -30,14 +30,12 @@ public class Player : MonoBehaviour {
 		transform.Translate (mover_x, 0.0f, 0.0f);
 
 		// Verificar colisão com o piso.
-		estaoNoChao = Physics2D.Linecast(transform.position, chaoVerificador.position, 1 << LayerMask.NameToLayer("Piso"));
+		estaoNoChao = Physics2D
+						.Linecast(transform.position, chaoVerificador.position, 1 << LayerMask.NameToLayer("Piso"));
 
 		// Pular.
 		if (Input.GetButtonDown ("Jump") && estaoNoChao) {
 			rb.velocity = new Vector2 (0.0f, impulso);
-			animator.SetFloat ("pVertical", Input.GetAxisRaw ("Vertical"));
-		} else {
-			animator.SetFloat ("pVertical", Mathf.Abs (Input.GetAxisRaw ("Vertical")));
 		}
 
 		// Orientação.
@@ -48,5 +46,6 @@ public class Player : MonoBehaviour {
 		}
 
 		animator.SetFloat ("pHorizontal", Mathf.Abs (Input.GetAxisRaw ("Horizontal")));
+		animator.SetBool ("pPulou", estaoNoChao);
 	}
 }
