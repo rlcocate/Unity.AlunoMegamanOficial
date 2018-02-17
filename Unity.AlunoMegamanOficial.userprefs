@@ -1,9 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ControleTouch.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="49" Column="31" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Blink.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SubInimigo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Projetil.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Inimigo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ControleTouch.cs" Line="13" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

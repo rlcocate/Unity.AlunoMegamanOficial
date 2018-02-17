@@ -45,7 +45,8 @@ public class Player : MonoBehaviour {
 			spriteRenderer.flipX = true;
 		}
 
-		animator.SetFloat ("pHorizontal", Mathf.Abs (Input.GetAxisRaw ("Horizontal")));
-		animator.SetBool ("pPulou", estaoNoChao);
+		animator.SetFloat ("pMoveu", Mathf.Abs (Input.GetAxisRaw ("Horizontal")));
+		animator.SetBool ("pPulou", !estaoNoChao);
+		animator.SetBool ("pAtirou", Input.GetButton("Fire1"));
 	}
 }

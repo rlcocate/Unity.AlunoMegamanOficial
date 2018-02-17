@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bloco
+  - Projetil
+  - Inimigo
+  - SubInimigo
   layers:
   - Default
   - TransparentFX
